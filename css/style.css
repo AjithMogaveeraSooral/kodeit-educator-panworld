@@ -762,10 +762,9 @@ h1 {
 
   .why-register-box {
     position: relative;
-    background-image: url("../images/background.png");
-    background-size: contain;
-    background-position: center bottom;
-    background-repeat: no-repeat;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
     padding: 20px;
     border-radius: 20px;
     min-height: auto !important;
