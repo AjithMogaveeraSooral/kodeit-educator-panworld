@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = true;
 
         const formData = new FormData(registrationForm);
-        formData.append('location', 'dammam');
+        formData.append('location', 'Dammam');
 
         fetch(scriptURL, { 
             method: 'POST', 
