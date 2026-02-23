@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const registrationForm = document.getElementById('registrationForm');
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby_RGbBgmtXMsWl9GtHXj8Fn0kbnxQBHrE5J6C9AVV_a97pb8UajjaKmkERIKzY9pFI/exec'; // <--- Paste your App Script URL here
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxf1KpAFO7f_e7svdAaGwdM-lG-_gVHC_r5GjiyTPIEf-FeJe8jp5-kYdZDJhrXXk3JGQ/exec'; // <--- Paste your App Script URL here
 
     registrationForm.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = true;
 
         const formData = new FormData(registrationForm);
+        formData.append('location', 'dammam');
 
         fetch(scriptURL, { 
             method: 'POST', 
